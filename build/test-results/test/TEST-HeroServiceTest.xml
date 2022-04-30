@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HeroServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-30T15:39:20" hostname="moringa-HP-EliteBook-840-G5" time="0.002">
+<testsuite name="HeroServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-30T15:59:14" hostname="moringa-HP-EliteBook-840-G5" time="0.002">
   <properties/>
-  <testcase name="add_new_hero_should_be_successful" classname="HeroServiceTest" time="0.001"/>
+  <testcase name="add_new_hero_should_be_successful" classname="HeroServiceTest" time="0.002"/>
   <testcase name="add_existing_hero_throws_hero_exists_exception" classname="HeroServiceTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

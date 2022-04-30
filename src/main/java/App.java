@@ -13,9 +13,10 @@ public class App {
         staticFileLocation("/public");
 
         get("/", (request, response) -> {
-            return new ModelAndView(new HashMap(), "homepage.hbs");
-
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "homepage.hbs");
         }, new HandlebarsTemplateEngine());
+
     }
 }
 
