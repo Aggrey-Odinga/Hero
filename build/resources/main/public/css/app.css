@@ -1,0 +1,55 @@
+import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Faster+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+*{
+margin: o;
+padding: 0;
+box-sizing: border-box
+}
+html {
+    font-weight: 700;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("/images/avengers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    padding: 0;
+    margin-top: 12em;
+}
+
+.navbar {
+    margin: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgb(163 46 26));
+}
+
+.navbar-brand{
+    text-shadow: 0.1rem 0.1rem 0.3rem #333;
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: deepskyblue;
+    background-color: transparent;
+}
+
+.navbar-nav a{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-right: 60px;
+}
+
+.navbar-nav a:hover, .dropdown-menu:hover .dropdown-toggle {
+    background-color: white;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
