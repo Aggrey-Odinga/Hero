@@ -17,6 +17,14 @@ public class App {
             return new ModelAndView(model, "homepage.hbs");
         }, new HandlebarsTemplateEngine());
 
+
+        get("/about", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "about.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
+
     }
 }
 
