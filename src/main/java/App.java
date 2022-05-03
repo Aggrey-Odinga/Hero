@@ -53,6 +53,32 @@ public class App {
 
 
 
+        get("/squad", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "squad.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        post("/squad", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            String name = request.queryParams("squadName");
+            String size = request.queryParams("squadSize");
+            String cause = request.queryParams("squadCause");
+            List<Hero> herosDB = request.session().attribute("squads");
+
+            Hero hero = new Hero(name, Integer.parseInt(size));
+            hero.addPower(cause);
+
+
+            HeroService heroService = new HeroService();
+            herosDB = heroService.addHero(hero, herosDB);
+
+            request.session().attribute("squads", herosDB);
+            model.put("squads", herosDB);
+            return new ModelAndView(model, "squad.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
+
     }
 }
 
