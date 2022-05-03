@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SquadServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-05-03T10:17:03" hostname="moringa-HP-EliteBook-840-G5" time="0.004">
+<testsuite name="SquadServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-05-03T14:19:32" hostname="moringa-HP-EliteBook-840-G5" time="0.004">
   <properties/>
   <testcase name="add_squad_should_be_successful" classname="SquadServiceTest" time="0.002"/>
   <testcase name="add_hero_to_a_full_squad_should_throw_squad_full_exception" classname="SquadServiceTest" time="0.0"/>

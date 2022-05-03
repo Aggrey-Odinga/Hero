@@ -1,9 +1,12 @@
 body{
-    background-image: url("public/images/black-panther-wakanda.jpg");
+    background-image: url("/images/black-panther-wakanda.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
 }
 
 form{
-    font-size: 15px;
-    color: white;
+    font-size: 35px;
+    color: black;
     padding: 10px;
 }
