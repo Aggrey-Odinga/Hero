@@ -74,7 +74,7 @@ public class App {
 
             request.session().attribute("squads", herosDB);
             model.put("squads", herosDB);
-            return new ModelAndView(model, "squad.hbs");
+            return new ModelAndView(model, "squads.hbs");
         }, new HandlebarsTemplateEngine());
 
 
