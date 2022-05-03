@@ -1,0 +1,28 @@
+{{#partial "styles"}}
+    <link rel="stylesheet" href="/css/squad.css">
+{{/ partial}}
+
+{{#partial}}
+    <h2>BUILD A NEW SQUAD HERE</h2>
+    <form>
+        <div class="form-group">
+            <label for="squadName">Name</label>
+            <input type="text" class="form-control" name="squadName" id="squadName" placeholder="Name of the squad" required>
+        </div>
+
+        <div class="form-group">
+            <label for="squadCause">Cause</label>
+            <input type="text" class="form-control" name="squadCause" id="squadCause" placeholder="What does this squad fight against?" required>
+        </div>
+
+        <div class="form-group">
+            <label for="squadSize">Size Limit</label>
+            <input type="number" class="form-control" name="squadSize" id="squadSize" placeholder="How many heroes should be in this squad?" required>
+        </div>
+
+        <button type="submit" class="btn btn-info my-2 my-sm-0">Build Squad</button>
+
+    </form>
+{{/partial}}
+
+{{> homepage.hbs}}
