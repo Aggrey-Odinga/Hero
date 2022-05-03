@@ -23,6 +23,11 @@ public class App {
             return new ModelAndView(model, "about.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/hero", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "hero.hbs");
+        }, new HandlebarsTemplateEngine());
+
 
 
     }
