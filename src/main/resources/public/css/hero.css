@@ -7,6 +7,7 @@ body{
 
 form{
     font-size: 35px;
+    font-weight: 600;
     color: black;
     padding: 10px;
 }

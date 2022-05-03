@@ -48,7 +48,7 @@ public class App {
 
             request.session().attribute("heros", herosDB);
             model.put("heros", herosDB);
-            return new ModelAndView(model, "about.hbs");
+            return new ModelAndView(model, "heroes.hbs");
         }, new HandlebarsTemplateEngine());
 
 
