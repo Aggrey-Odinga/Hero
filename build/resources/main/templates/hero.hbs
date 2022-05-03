@@ -1,4 +1,4 @@
-{{#partial}}
+{{#partial "styles"}}
 
     <link rel='stylesheet' href='/css/hero.css'>
 
@@ -8,7 +8,7 @@
 
     <div class="container">
         <h2>BUILD YOUR SUPER HERO HERE</h2>
-        <form action="">
+        <form action="/hero" method="post">
             <div class="form-group">
                 <label for="name">Heroes Name</label>
                 <input type="text" class="form-control" name="heroName" id="heroName" placeholder="Name of the hero" required>
