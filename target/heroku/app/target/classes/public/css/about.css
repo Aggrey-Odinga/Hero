@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    color: white;
+
+
+    }
+
+.about-hero h2{
+    font-size: 55px;
+    padding:20px;
+    margin: 40px;
+    letter-spacing: 15px;
+    font-weight: bolder;
+
+}
+
+.about-hero p{
+    background-color: black;
+    font-size: 35px;
+    color: white;
+}

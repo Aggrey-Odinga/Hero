@@ -8,35 +8,34 @@
 
     <h2>SUPER HERO LIST</h2>
 
-    {{#if heroes}}
-
-        {{#each heroes}}
-
-    <div class="card mb-3" id="hero">
-        <div class="row">
-            <div class="col-md-4">
-                <img id="hero_img" src="/images/black-panther-wakanda.jpg">
-            </div>
-            <div class="col=md-8">
-                <div class="card-body">
-                    <ul style="color: black;" class="card-text">
-                        <li><span>Name: </span>{{name}}</li>
-                        <li><span>Age: </span>{{age}}</li>
-                        <li><span>Power: </span>{{power}}</li>
-                        <li><span>Weakness: </span>{{weakness}}</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
+    <div class="msg">
+        {{message}}
     </div>
 
-        {{/each}}
 
-    {{/if}}
+
+    {{#each heros}}
+         <div class="card mb-3" id="hero">
+             <div class="row">
+                 <div class="col-md-4">
+                     <img id="hero_img" src="/images/black-panther-wakanda.jpg">
+                 </div>
+                      <div class="col=md-8">
+                         <div class="card-body">
+                             <ul class="card-text">
+                                    <li><span>Name: </span>{{name}}</li>
+                                    <li><span>Age: </span>{{age}}</li>
+                                 <li><span>Power: </span>{{powers}}</li>
+                                 <li><span>Weakness: </span>{{ weaknesses}}</li>
+                              </ul>
+                         </div>
+                      </div>
+             </div>
+         </div>
+
+    {{/each}}
+
+
 
 
 

@@ -1,0 +1,30 @@
+body{
+    background-image: url("/images/jleague2.jpg");
+    color: black;
+}
+
+h2{
+        text-align: center;
+        color: white;
+        font-weight: 700;
+ }
+
+#hero_img{
+    width: inherit;
+}
+.card-text{
+    list-style: disc;
+    margin: 15px;
+}
+
+.card-text ul li{
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    font-weight: 600;
+}
+
+.card-text li span{
+    font-style: oblique;
+    font-weight: 600;
+}

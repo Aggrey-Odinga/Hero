@@ -1,0 +1,9 @@
+exceptions/HeroExistsException.class
+App.class
+HeroService.class
+models/Hero.class
+exceptions/HeroExistsInSquadException.class
+SquadService.class
+models/Squad.class
+exceptions/SquadExistsException.class
+exceptions/SquadFullException.class

@@ -8,22 +8,30 @@
 
     <h2>LIST OF SUPER HERO SQUADS</h2>
 
-    <div class="card mb-3" id="hero">
-        <div class="row">
-            <div class="col-md-4">
-                <img id="hero_img" src="/images/jleague1.jpg">
-            </div>
-            <div class="col=md-8">
-                <div class="card-body">
-                    <ul style="color: black;" class="card-text">
-                        <li><span>Name: </span>{{name}}</li>
-                        <li><span>size: </span>{{size}}</li>
-                        <li><span>Cause: </span>{{cause}}</li>
-                    </ul>
+
+    {{#each squads}}
+
+        <div class="card mb-3" id="hero">
+            <div class="row">
+                <div class="col-md-4">
+                    <img id="hero_img" src="/images/jleague1.jpg">
+                </div>
+                <div class="col=md-8">
+                    <div class="card-body">
+                        <ul class="card-text">
+                            <li><span>Name: </span>{{name}}</li>
+                            <li><span>size: </span>{{maxSize}}</li>
+                            <li><span>Cause: </span>{{cause}}</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+
+
+    {{/each}}
+
 
 
 
