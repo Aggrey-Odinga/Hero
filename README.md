@@ -34,7 +34,7 @@ Github link to my site [Aggrey Odinga](https://github.com/Aggrey-Odinga).
 
 - Email me at: aggreyodinga@gmail.com
 
-## [License] (https://github.com/Aggrey-Odinga/githubSearch/blob/main/LICENSE)
+## [License] (https://github.com/Aggrey-Odinga/Independent-project-Quiz-Board/blob/main/LICENSE)
 
 
 
