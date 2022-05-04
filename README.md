@@ -4,7 +4,7 @@
 
 <p>Heroes-Squad App is an App that enables a user to build a team of superheroes.</p>
 
-<p>A user may build as many heroes as possible and also build squads</p>
+<p>A user may build as many heroes as possible and also build as many squads as they want.</p>
 
 <p>User is able to view the heroes and squads that they have built during the session that they spend on the app.</p>
 
@@ -14,9 +14,10 @@
 
 Github link to my site [Aggrey Odinga](https://github.com/Aggrey-Odinga).
 
-### Set up and Installation
+## Set up and Installation
 
  Follow this steps to setup this project:
+ 
 <p>- Git clone the repository in your terminal.</p>
 
 <p>- Cd into the project directory.</p>
@@ -34,7 +35,7 @@ Github link to my site [Aggrey Odinga](https://github.com/Aggrey-Odinga).
 
 - Email me at: aggreyodinga@gmail.com
 
-## [License](https://github.com/Aggrey-Odinga/Independent-project-Quiz-Board/blob/main/LICENSE)
+## [License](https://github.com/Aggrey-Odinga/Hero/blob/master/LICENSE)
 
 
 
