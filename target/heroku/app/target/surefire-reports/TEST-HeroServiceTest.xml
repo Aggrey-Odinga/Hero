@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="HeroServiceTest" time="0.005" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="HeroServiceTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.15+10-Ubuntu-0ubuntu0.20.04.1"/>
@@ -61,6 +61,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="HeroServiceTest" name="add_new_hero_should_be_successful" time="0.005"/>
+  <testcase classname="HeroServiceTest" name="add_new_hero_should_be_successful" time="0.002"/>
   <testcase classname="HeroServiceTest" name="add_existing_hero_throws_hero_exists_exception" time="0"/>
 </testsuite>

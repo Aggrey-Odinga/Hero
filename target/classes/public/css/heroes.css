@@ -5,10 +5,12 @@ body{
 
 h2{
         text-align: center;
-        color: yellow;
+        color: white;
         font-weight: 700;
-        margin-bottom: 50px;
-        padding-top: 50px;
+ }
+
+ .msg{
+    color: white;
  }
 
 #hero_img{
