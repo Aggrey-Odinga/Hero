@@ -8,6 +8,10 @@
 
     <h2>SUPER HERO LIST</h2>
 
+    {{#if heroes}}
+
+        {{#each heroes}}
+
     <div class="card mb-3" id="hero">
         <div class="row">
             <div class="col-md-4">
@@ -29,6 +33,10 @@
 
         </div>
     </div>
+
+        {{/each}}
+
+    {{/if}}
 
 
 

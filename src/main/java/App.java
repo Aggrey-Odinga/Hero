@@ -1,9 +1,11 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import java.util.List;
 import java.util.Map;
 
 import models.Hero;
+import models.Squad;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
@@ -52,30 +54,28 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
 
-
         get("/squad", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
+
 
         post("/squad", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String name = request.queryParams("squadName");
             String size = request.queryParams("squadSize");
             String cause = request.queryParams("squadCause");
-            List<Hero> herosDB = request.session().attribute("squads");
+            List<Squad> squadsDB = request.session().attribute("squads");
 
-            Hero hero = new Hero(name, Integer.parseInt(size));
-            hero.addPower(cause);
+            Squad squad = new Squad(name, cause, Integer.parseInt(size));
+            SquadService squadService = new SquadService();
+            squadsDB = squadService.addSquad(squadsDB, squad);
 
-
-            HeroService heroService = new HeroService();
-            herosDB = heroService.addHero(hero, herosDB);
-
-            request.session().attribute("squads", herosDB);
-            model.put("squads", herosDB);
+            request.session().attribute("squads", squadsDB);
+            model.put("squads", squadsDB);
             return new ModelAndView(model, "squads.hbs");
         }, new HandlebarsTemplateEngine());
+
 
 
 
